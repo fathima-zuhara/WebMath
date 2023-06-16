@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-14T15:26:55 GST" name="Default suite" finished-at="2023-06-14T15:27:01 GST" duration-ms="6267">
+    <groups>
+    </groups>
+    <test started-at="2023-06-14T15:26:55 GST" name="Default test" finished-at="2023-06-14T15:27:01 GST" duration-ms="6267">
+      <class name="PageTest_WM.Home_Page_Test">
+        <test-method is-config="true" signature="Browser_config()[pri:0, instance:PageTest_WM.Home_Page_Test@485966cc]" started-at="2023-06-14T15:26:55 GST" name="Browser_config" finished-at="2023-06-14T15:27:00 GST" duration-ms="5075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_config -->
+        <test-method signature="Validate_Home_page()[pri:0, instance:PageTest_WM.Home_Page_Test@485966cc]" started-at="2023-06-14T15:27:00 GST" name="Validate_Home_page" finished-at="2023-06-14T15:27:01 GST" duration-ms="903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Home_page -->
+        <test-method is-config="true" signature="Validate_BrowserClosing()[pri:0, instance:PageTest_WM.Home_Page_Test@485966cc]" started-at="2023-06-14T15:27:01 GST" name="Validate_BrowserClosing" finished-at="2023-06-14T15:27:01 GST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_BrowserClosing -->
+      </class> <!-- PageTest_WM.Home_Page_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
