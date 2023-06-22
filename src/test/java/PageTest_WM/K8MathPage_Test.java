@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import BasePage_Webmath.BasePage_WM;
 import Pages_WM.K8Math_Page;
 
-public class K8MathPage_Test extends BasePage_WM{
+public class K8MathPage_Test extends basepageWebMath{
 
 	K8Math_Page Kp;
 	
