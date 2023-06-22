@@ -15,7 +15,7 @@ import Pages_WM.OtherStuff_Page;
 import Pages_WM.PlotsandGeometry_Page;
 import Pages_WM.Trigandcalculas_Page;
 
-public class Home_Page_Test extends BasePage_WM{
+public class Home_Page_Test extends basepageWebMath{
 
 	
 	Home_Page Hp;
@@ -30,7 +30,7 @@ public class Home_Page_Test extends BasePage_WM{
 	@BeforeMethod
      public void Browser_config() {
 		
-		      Initialization();
+		      initialization();
               
               Hp=new Home_Page();
               Kp=new K8Math_Page();
@@ -42,48 +42,40 @@ public class Home_Page_Test extends BasePage_WM{
             }
 	
      @Test
-	 public void Validate_Home_page() {
+	 public void validateHomepage() {
     	
 		Hp.Home_button();
      }
      
      
      @Test
-     public void ValidatePage_Title() {
+     public void validatePageTitle() {
     	String actTitle=Hp.Page_Title();
     	String expTitle=prop.getProperty("title");
  		Assert.assertEquals(actTitle, expTitle);
 	}
-		//Hp.Page_Title();
+		
      @Test
-     public void ValidatePage_Logo() {
+     public void validatePageLogo() {
 		boolean logo=Hp.Page_Logo();
 	    Assert.assertTrue(logo);
 	   
      }
      @Test
-     public void ValidateMath_Help() {
+     public void validateMathHelp() {
     	 Hp.Math_Help();
 	}
      
      @Test
-     public void Validate_Image() {
+     public void validateImage() {
 	    Hp.Image_1();
 	    Hp.Image_2();
 	    Hp.Image_3();
 	}
 
-//     @Test(priority = 1)
-//     public void Validate_Math_ForEveryonePage() {
-//		Mp.MathForEveryone_button();
-//	}
-    
-     
-     
-     
-     @Test(priority = 4)
-     public void ValidateAlgebra_page(){
-    	 Ap.Algebra_button();
+    @Test(priority = 4)
+     public void validateAlgebrapage(){
+    	 Ap.algebraButton();
      }
      
     @Test(priority = 5)
@@ -97,13 +89,13 @@ public class Home_Page_Test extends BasePage_WM{
      }
      
      @Test(priority = 7)
-     public void ValidateOtherStuff_Page(){
+     public void validateOtherStuffPage(){
     	 Op.OtherStuff_button();
      }
      
      @AfterMethod
- 	 public void Validate_BrowserClosing() {
- 		TearDown();
+ 	 public void validateBrowserClosing() {
+ 		pageTearDown();
  	}
      
      
