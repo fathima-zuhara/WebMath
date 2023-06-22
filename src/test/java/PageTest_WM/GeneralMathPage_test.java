@@ -10,7 +10,7 @@ import BasePage_Webmath.BasePage_WM;
 import Pages_WM.GeneralMath_Page;
 import Pages_WM.Home_Page;
 
-public class GeneralMathPage_test extends BasePage_WM{
+public class GeneralMathPage_test extends basepageWebMath{
 
 	
 		GeneralMath_Page Gp;
